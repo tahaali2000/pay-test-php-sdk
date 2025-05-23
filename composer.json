@@ -1,0 +1,50 @@
+{
+    "name": "test/pay-test-sdk",
+    "description": "test",
+    "type": "library",
+    "keywords": [
+        "SDK"
+    ],
+    "homepage": "https://app.apimatic.io/api-docs-preview/dashboard/682fef96dd33baf6c855bac6/v/2_16#/http/step-by-step-tutorial",
+    "license": [
+        "MIT"
+    ],
+    "authors": [
+        {
+            "name": "test",
+            "email": "taha.ali@apimatic.io"
+        }
+    ],
+    "support": {},
+    "prefer-stable": false,
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "apimatic/unirest-php": "^4.0.6",
+        "apimatic/core-interfaces": "~0.1.5",
+        "apimatic/core": "~0.3.13"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5",
+        "phan/phan": "5.4.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "PayPalRESTAPIsLib\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PayPalRESTAPIsLib\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "lint-src": "phpcs --standard=phpcs-ruleset.xml src/",
+        "lint-src-fix": "phpcbf --standard=phpcs-ruleset.xml src/",
+        "analyze": "phan --allow-polyfill-parser -p",
+        "lint": [
+            "@lint-src"
+        ]
+    }
+}
