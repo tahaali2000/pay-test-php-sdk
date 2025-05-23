@@ -68,7 +68,7 @@ class PayPalRESTAPIsClient implements ConfigurationInterface
             ->converter(new CompatibilityConverter())
             ->jsonHelper(ApiHelper::getJsonHelper())
             ->apiCallback($this->config['httpCallback'] ?? null)
-            ->userAgent('PayPal REST API PHP SDK, Version: 1.2.6, on OS {os-info}')
+            ->userAgent('PayPal REST API PHP SDK, Version: 1.2.9, on OS {os-info}')
             ->serverUrls(self::ENVIRONMENT_MAP[$this->getEnvironment()], Server::DEFAULT_)
             ->authManagers(['Oauth2' => $this->clientCredentialsAuthManager])
             ->loggingConfiguration($loggingConfiguration)
