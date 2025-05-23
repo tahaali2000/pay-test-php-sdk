@@ -12,23 +12,23 @@ Find out more here: [https://developer.paypal.com/docs/api/orders/v2/](https://d
 Run the following command to install the package and automatically add the dependency to your composer.json file:
 
 ```bash
-composer require "test/pay-test-sdk:1.2.9"
+composer require "test/pay-test-sdk:14.2.9"
 ```
 
 Or add it to the composer.json file manually as given below:
 
 ```json
 "require": {
-    "test/pay-test-sdk": "1.2.9"
+    "test/pay-test-sdk": "14.2.9"
 }
 ```
 
 You can also view the package at:
-https://packagist.org/packages/test/pay-test-sdk#1.2.9
+https://packagist.org/packages/test/pay-test-sdk#14.2.9
 
 ## Initialize the API Client
 
-**_Note:_** Documentation for the client can be found [here.](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/1.2.9/doc/client.md)
+**_Note:_** Documentation for the client can be found [here.](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/14.2.9/doc/client.md)
 
 The following parameters are configurable for the API Client:
 
@@ -44,9 +44,9 @@ The following parameters are configurable for the API Client:
 | retryOnTimeout | `bool` | Whether to retry on request timeout.<br>*Default*: `true` |
 | httpStatusCodesToRetry | `array` | Http status codes to retry against.<br>*Default*: `408, 413, 429, 500, 502, 503, 504, 521, 522, 524` |
 | httpMethodsToRetry | `array` | Http methods to retry against.<br>*Default*: `'GET', 'PUT'` |
-| loggingConfiguration | [`LoggingConfigurationBuilder`](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/1.2.9/doc/logging-configuration-builder.md) | Represents the logging configurations for API calls |
-| proxyConfiguration | [`ProxyConfigurationBuilder`](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/1.2.9/doc/proxy-configuration-builder.md) | Represents the proxy configurations for API calls |
-| clientCredentialsAuth | [`ClientCredentialsAuth`](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/1.2.9/doc/auth/oauth-2-client-credentials-grant.md) | The Credentials Setter for OAuth 2 Client Credentials Grant |
+| loggingConfiguration | [`LoggingConfigurationBuilder`](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/14.2.9/doc/logging-configuration-builder.md) | Represents the logging configurations for API calls |
+| proxyConfiguration | [`ProxyConfigurationBuilder`](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/14.2.9/doc/proxy-configuration-builder.md) | Represents the proxy configurations for API calls |
+| clientCredentialsAuth | [`ClientCredentialsAuth`](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/14.2.9/doc/auth/oauth-2-client-credentials-grant.md) | The Credentials Setter for OAuth 2 Client Credentials Grant |
 
 The API client can be initialized as follows:
 
@@ -83,29 +83,29 @@ The SDK can be configured to use a different environment for making API calls. A
 
 This API uses the following authentication schemes.
 
-* [`Oauth2 (OAuth 2 Client Credentials Grant)`](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/1.2.9/doc/auth/oauth-2-client-credentials-grant.md)
+* [`Oauth2 (OAuth 2 Client Credentials Grant)`](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/14.2.9/doc/auth/oauth-2-client-credentials-grant.md)
 
 ## List of APIs
 
-* [Orders](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/1.2.9/doc/controllers/orders.md)
-* [Payments](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/1.2.9/doc/controllers/payments.md)
-* [Vault](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/1.2.9/doc/controllers/vault.md)
+* [Orders](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/14.2.9/doc/controllers/orders.md)
+* [Payments](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/14.2.9/doc/controllers/payments.md)
+* [Vault](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/14.2.9/doc/controllers/vault.md)
 
 ## SDK Infrastructure
 
 ### Configuration
 
-* [ProxyConfigurationBuilder](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/1.2.9/doc/proxy-configuration-builder.md)
-* [LoggingConfigurationBuilder](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/1.2.9/doc/logging-configuration-builder.md)
-* [RequestLoggingConfigurationBuilder](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/1.2.9/doc/request-logging-configuration-builder.md)
-* [ResponseLoggingConfigurationBuilder](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/1.2.9/doc/response-logging-configuration-builder.md)
+* [ProxyConfigurationBuilder](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/14.2.9/doc/proxy-configuration-builder.md)
+* [LoggingConfigurationBuilder](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/14.2.9/doc/logging-configuration-builder.md)
+* [RequestLoggingConfigurationBuilder](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/14.2.9/doc/request-logging-configuration-builder.md)
+* [ResponseLoggingConfigurationBuilder](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/14.2.9/doc/response-logging-configuration-builder.md)
 
 ### HTTP
 
-* [HttpRequest](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/1.2.9/doc/http-request.md)
-* [HttpResponse](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/1.2.9/doc/http-response.md)
+* [HttpRequest](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/14.2.9/doc/http-request.md)
+* [HttpResponse](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/14.2.9/doc/http-response.md)
 
 ### Utilities
 
-* [ApiException](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/1.2.9/doc/api-exception.md)
+* [ApiException](https://www.github.com/tahaali2000/pay-test-php-sdk/tree/14.2.9/doc/api-exception.md)
 
